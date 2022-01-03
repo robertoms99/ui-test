@@ -14,7 +14,7 @@ const FeaturedMoreInfo = () => (
     <a href="http://wikipedia.com">
       <svg
         className="featured-card__more-info-icon"
-        preserveAspectRatio="preserveAspectRatio"
+        preserveAspectRatio="xMidYMid"
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 27 18"
       >
