@@ -25,7 +25,7 @@ const NavbarHamburgerIcon = () => (
 )
 
 const NavbarSearchForm = () => (
-  <form action="javascript:void(0)">
+  <form onSubmit={(e) => e.preventDefault()}>
     <input className="nav__search-input" aria-label="search" type="text" />
     <button className="nav__search icon-button" title="Search" type="submit">
       <img src="assets/img/search.svg" alt="search" />
