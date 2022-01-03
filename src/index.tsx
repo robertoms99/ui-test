@@ -1,6 +1,7 @@
 import React from 'react'
 import { render } from 'react-dom'
 import App from './app/infrastructure/ui/App'
+import './app/infrastructure/ui/styles/index.scss'
 
 const RootComponent = (
   <React.StrictMode>

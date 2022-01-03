@@ -12,7 +12,7 @@ const ClosingBanner = () => (
   </div>
 )
 
-const FeaturedBanner: React.FC = () => (
+const Hero: React.FC = () => (
   <header className="hero">
     <img
       className="hero__background"
@@ -28,4 +28,4 @@ const FeaturedBanner: React.FC = () => (
   </header>
 )
 
-export default FeaturedBanner
+export default Hero
