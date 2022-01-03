@@ -339,6 +339,12 @@ main h2 {
   }
 }
 
+.title-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 @media all and (min-width: 500px) {
   .banner-top .banner__left {
     flex-basis: 30%;
