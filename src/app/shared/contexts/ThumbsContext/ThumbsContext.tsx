@@ -1,7 +1,7 @@
 import React, { createContext, useEffect, useState } from 'react'
 import { useStorage } from '../../hooks'
-import THUMBS_JSON from '../../../../../assets/data.json'
-import { IThumb } from '../../../../interfaces'
+import THUMBS_JSON from '../../../../assets/data.json'
+import { IThumb } from '../../interfaces'
 
 const DEFAULT_CONTEXT_VALUE = {
   thumbs: [] as IThumb[],

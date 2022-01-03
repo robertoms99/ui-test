@@ -2,7 +2,7 @@ import { SyntheticEvent, useContext } from 'react'
 import { Banner, Footer, ThumbsList } from '../../components'
 import { MainLayout } from '../../layouts'
 import Hero from '../../layouts/Hero'
-import { ThumbsContext } from '../../../contexts'
+import { ThumbsContext } from '../../../shared/contexts'
 
 const Home = () => {
   const {
