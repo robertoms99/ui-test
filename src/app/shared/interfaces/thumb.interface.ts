@@ -1,4 +1,5 @@
 export default interface IThumb {
+  id: string
   name: string
   description: string
   category: string

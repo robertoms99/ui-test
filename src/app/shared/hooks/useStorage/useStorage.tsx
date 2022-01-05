@@ -1,6 +1,6 @@
 import { useState } from 'react'
 
-const useStorage = <T extends any>(key: string, initialValue = '') => {
+const useStorage = <T extends any>(key: string, initialValue: T = '' as T) => {
   const storage = window.localStorage
 
   const [state, setState] = useState<T>(() => {
@@ -15,7 +15,7 @@ const useStorage = <T extends any>(key: string, initialValue = '') => {
     setState(value)
   }
 
-  return [state, setValue]
+  return [state, setValue] as [T, (value: T) => void]
 }
 
 export default useStorage
