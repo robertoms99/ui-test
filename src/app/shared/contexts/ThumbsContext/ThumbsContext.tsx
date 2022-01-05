@@ -1,6 +1,6 @@
 import React, { createContext, useEffect, useState } from 'react'
+import { storage } from '../../../db'
 import { useStorage } from '../../hooks'
-import THUMBS_JSON from '../../../../assets/data.json'
 import { IThumb } from '../../interfaces'
 
 const DEFAULT_CONTEXT_VALUE = {
@@ -18,8 +18,11 @@ const ThumbsContextProvider: React.FC = ({ children }) => {
   const [viewThumbsType, setViewThumbsType] = useStorage('view-type', 'list')
 
   useEffect(() => {
-    const { data: thumbsData } = THUMBS_JSON as { data: any[] }
-    setThumbs((thumbsData ?? []) as IThumb[])
+    const unSubscribe = storage().onSubscribe('thumbs', setThumbs)
+
+    return () => {
+      unSubscribe()
+    }
   }, [])
 
   return (
