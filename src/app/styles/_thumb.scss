@@ -117,6 +117,7 @@
   }
   &__positive {
     background: rgba(60, 187, 180, 0.6);
+    transition: flex-basis 200ms;
     flex-basis: var(--positive-basis);
   }
   &__negative {
