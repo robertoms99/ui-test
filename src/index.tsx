@@ -2,6 +2,10 @@ import React from 'react'
 import { render } from 'react-dom'
 import App from './app/App'
 import './app/styles/index.scss'
+import { initializeApp } from 'firebase/app'
+import firebaseConfig from './app/config/env'
+
+initializeApp(firebaseConfig)
 
 const RootComponent = (
   <React.StrictMode>
