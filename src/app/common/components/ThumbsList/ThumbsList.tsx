@@ -13,8 +13,8 @@ const ThumbsList: React.FC<ThumbsListProps> = ({ thumbs = [] }: ThumbsListProps)
   return (
     <div className="thumblist-wrapper">
       <div className={`thumblist thumblist--${viewThumbsType}`}>
-        {thumbs.map((thumb, index: number) => (
-          <Thumb thumb={thumb} key={index} />
+        {thumbs.map((thumb) => (
+          <Thumb thumb={thumb} key={thumb.id} />
         ))}
       </div>
     </div>

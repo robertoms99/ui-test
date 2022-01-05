@@ -6,4 +6,6 @@ const formatPercentage = (percentage: number) => {
   return formatter.format(percentage)
 }
 
-export { formatPercentage }
+const getPercentageByValue = (value: number, total: number) => (100 * value) / total
+
+export { formatPercentage, getPercentageByValue }
