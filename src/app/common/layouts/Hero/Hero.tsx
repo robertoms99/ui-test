@@ -1,4 +1,6 @@
 import { FeaturedCard } from '../../components'
+import PopeFrancisPNG from '../../../../assets/img/pope-francis.png'
+import PopeFrancis2XPNG from '../../../../assets/img/pope-francis.@2x.png'
 
 const ClosingBanner = () => (
   <div className="hero__closing-gauge">
@@ -16,9 +18,9 @@ const Hero: React.FC = () => (
   <header className="hero">
     <img
       className="hero__background"
-      srcSet="assets/img/pope-francis.png 750w, assets/img/pope-francis.@2x.png 1440w"
+      srcSet={`${PopeFrancisPNG} 750w, ${PopeFrancis2XPNG} 1440w`}
       sizes="(min-width: 750px) 1440px, 100vw"
-      src="assets/img/pope-francis.png"
+      src={PopeFrancisPNG}
       alt="Pope Francis"
     />
     <div className="max-centered">

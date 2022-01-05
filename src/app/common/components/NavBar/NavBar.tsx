@@ -1,3 +1,5 @@
+import SearchSVG from '../../../../assets/img/search.svg'
+
 const PAGES_ROUTES = [
   {
     id: 1,
@@ -28,7 +30,7 @@ const NavbarSearchForm = () => (
   <form onSubmit={(e) => e.preventDefault()}>
     <input className="nav__search-input" aria-label="search" type="text" />
     <button className="nav__search icon-button" title="Search" type="submit">
-      <img src="assets/img/search.svg" alt="search" />
+      <img src={SearchSVG} alt="search" />
     </button>
   </form>
 )

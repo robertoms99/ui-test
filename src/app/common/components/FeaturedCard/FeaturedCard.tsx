@@ -1,10 +1,13 @@
+import LikeSvg from '../../../../assets/img/thumbs-up.svg'
+import DislikeSVG from '../../../../assets/img/thumbs-down.svg'
+
 const FeaturedVoteButtons = () => (
   <div className="featured-card__buttons">
     <button className="icon-button" aria-label="thumbs up">
-      <img src="assets/img/thumbs-up.svg" alt="thumbs up" />
+      <img src={LikeSvg} alt="thumbs up" />
     </button>
     <button className="icon-button" aria-label="thumbs down">
-      <img src="assets/img/thumbs-down.svg" alt="thumbs down" />
+      <img src={DislikeSVG} alt="thumbs down" />
     </button>
   </div>
 )
